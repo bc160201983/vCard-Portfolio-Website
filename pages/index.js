@@ -5,9 +5,11 @@ import styles from "../styles/Home.module.css";
 import { FiMail, FiSmartphone, FiCalendar } from "react-icons/fi";
 import { MdOutlineAddLocationAlt } from "react-icons/md";
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
+import { data } from "../components/data";
+import Info from "../components/Main/Info";
 export default function Home() {
   return (
-    <div className="flex">
+    <div className="flex w-full">
       <div className="left-nav border border-[#383838] nav-shadow mx-3 rounded-[20px] bg-[#1E1E1F] basis-[20%] p-[30px] flex flex-col justify-center items-center transition-all duration-[0.3s] ease-in-out">
         <div className="info-name flex flex-col justify-center items-center">
           <div className="image flex justify-center items-center h-[calc(100%-3.75rem)] w-[calc(100%-3.75rem)] text-[#d6d6d6] image-bg rounded-[32px]">
@@ -68,7 +70,51 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="right-nav basis-[80%] w-full h-full bg-[#1e1e1e]"></div>
+      <div className="right-nav relative basis-[80%] w-full h-full border border-[#383838] nav-shadow mx-3 rounded-[20px] bg-[#1E1E1F] p-[30px] transition-all duration-[0.3s] ease-in-out">
+        <div className="nav-container h-[64px] right-0 top-0 absolute bg-[#2a2a2b] tex-[15px] font-[500] text-[#d6d6d6] px-[38px] border border-[#383838]">
+          <ul className="flex items-center justify-center h-full overflow-hidden">
+            <li className="mr-[2.75rem] nav-item-hover cursor-pointer">
+              About
+            </li>
+            <li className="mr-[2.75rem] nav-item-hover cursor-pointer">
+              Resume
+            </li>
+            <li className="mr-[2.75rem] nav-item-hover cursor-pointer">
+              Portfolio
+            </li>
+            <li className="mr-[2.75rem] nav-item-hover cursor-pointer">Blog</li>
+            <li className="nav-item-hover cursor-pointer">Contact</li>
+          </ul>
+        </div>
+        <div className="title pb-2">
+          <div className="text-[32px] text-white font-[600] mb-[37px]">
+            About Me
+          </div>
+          <p className="text-[16px] font-[300] text-[#D6d6d6] mb-4">
+            I'm Creative Director and UI/UX Designer from Sydney, Australia,
+            working in web development and print media. I enjoy turning complex
+            problems into simple, beautiful and intuitive designs.
+          </p>
+          <p className="text-[16px] font-[300] text-[#D6d6d6] mb-4">
+            My job is to build your website so that it is functional and
+            user-friendly but at the same time attractive. Moreover, I add
+            personal touch to your product and make sure that is eye-catching
+            and easy to use. My aim is to bring across your message and identity
+            in the most creative way. I created web design for many famous brand
+            companies.
+          </p>
+        </div>
+        <div className="text-[24px] text-white font-[600] mt-4 mb-5">
+          What I'm Doing
+        </div>
+        <div className="grid-info">
+          <div className="text-[#d6d6d6] px-3 grid grid-cols-2">
+            {data.map((item) => (
+              <Info {...item} />
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

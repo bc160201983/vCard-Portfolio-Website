@@ -16,6 +16,9 @@ body {
 }
 
 @layer components {
+  .nav-item-hover {
+    @apply hover:transition-all hover:duration-300 hover:ease-in-out hover:opacity-60;
+  }
 }
 
 @layer utilities {
@@ -49,6 +52,14 @@ body {
     width: calc(100% - 3.75rem);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+
+  .box-info-shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 25px 50px 0px;
+  }
+
+  .nav-container {
+    border-radius: 0 20px 0 20px;
   }
 
   /* .icon-box .font-icon {
