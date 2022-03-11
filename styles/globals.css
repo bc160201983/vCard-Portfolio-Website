@@ -40,6 +40,16 @@ body {
   .box--s2 {
     background: linear-gradient(135deg, #404040 0%, rgba(64, 64, 64, 0) 48.44%);
   }
+  .image-bg {
+    background: linear-gradient(137.84deg, #3f3f40 2.69%, #303030 93.75%);
+
+    margin: 1.875rem 1.875rem 1.25rem;
+    overflow: hidden;
+    height: calc(100% - 3.75rem);
+    width: calc(100% - 3.75rem);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
 
   /* .icon-box .font-icon {
     background-color: linear-gradient(90deg, #ffdb6e, #ffbc5e);

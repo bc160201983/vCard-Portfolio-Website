@@ -10,10 +10,12 @@ export default function Home() {
     <div className="flex">
       <div className="left-nav border border-[#383838] nav-shadow mx-3 rounded-[20px] bg-[#1E1E1F] basis-[20%] p-[30px] flex flex-col justify-center items-center transition-all duration-[0.3s] ease-in-out">
         <div className="info-name flex flex-col justify-center items-center">
-          <div className="image h-[calc(100%-3.75rem) w-[calc(100%-3.75rem)] text-[#d6d6d6]">
-            <img
+          <div className="image flex justify-center items-center h-[calc(100%-3.75rem)] w-[calc(100%-3.75rem)] text-[#d6d6d6] image-bg rounded-[32px]">
+            <Image
+              width={177}
+              height={173}
               src="https://art-template.ru/vcard4/assets/images/my-avatar.png"
-              alt=""
+              alt="profile photo"
             />
           </div>
           <div>
