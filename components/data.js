@@ -1,3 +1,8 @@
+import AppIcon from "../public/icon-app.svg";
+import IconDesign from "../public/icon-design.svg";
+import IconDev from "../public/icon-dev.svg";
+import IconPhoto from "../public/icon-photo.svg";
+
 export const data = [
   {
     id: 1,
@@ -15,7 +20,7 @@ export const data = [
   {
     id: 3,
     title: "Mobile Apps",
-    img: "https://art-template.ru/vcard4/assets/icons/icon-app.svg",
+    img: AppIcon,
     desc: "Professional development of applications for iOS and Android.",
   },
   {

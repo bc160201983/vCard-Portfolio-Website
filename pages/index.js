@@ -32,7 +32,7 @@ export default function Home() {
         What I'm Doing
       </div>
       <div className="grid-info">
-        <div className="text-[#d6d6d6] px-3 grid grid-cols-2">
+        <div className="text-[#d6d6d6] grid tab:grid-cols-2 grid-cols-1">
           {data.map((item) => (
             <Info key={item.id} {...item} />
           ))}

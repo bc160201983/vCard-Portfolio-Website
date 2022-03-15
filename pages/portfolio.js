@@ -1,11 +1,11 @@
 import React from "react";
 
-const resume = () => {
+const portfolio = () => {
   return (
     <>
       <div className="title pb-1">
         <div className="text-[32px] text-white font-[600] mb-[25px]">
-          Resume
+          Portfolio
           <h1 className="title-separate mt-2"></h1>
         </div>
       </div>
@@ -13,4 +13,4 @@ const resume = () => {
   );
 };
 
-export default resume;
+export default portfolio;

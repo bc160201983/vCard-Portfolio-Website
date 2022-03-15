@@ -60,6 +60,12 @@ body {
   .nav-container {
     border-radius: 0 20px 0 20px;
   }
+  .nav-container-mobile {
+    border-radius: 20px 20px 0 0;
+    backdrop-filter: blur(6px);
+    background: rgba(43, 43, 44, 0.75);
+    z-index: 1112;
+  }
 
   .title-separate {
     content: "";
