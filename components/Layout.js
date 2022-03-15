@@ -14,17 +14,17 @@ const Layout = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <div className="laptop:max-w-7xl  laptop:mx-auto mx-[79px] py-[64px] px-[12px]">
+      <div className="laptop:max-w-7xl  mx-auto py-[64px] px-[12px]">
         <div className="laptop:flex">
           <LeftSidebar />
           <div className="right-nav relative basis-[80%] h-full border border-[#383838] nav-shadow mx-3 rounded-[20px] bg-[#1E1E1F] p-[30px] transition-all duration-[0.3s] ease-in-out">
             <NavBar />
-            <div className="">{children}</div>
+            <div className="main">{children}</div>
           </div>
         </div>
       </div>
-      <div className="nav-container-mobile tab:hidden block h-[64px] fixed w-full bottom-0 text-[15px] font-[500] text-[#d6d6d6] px-[38px] border border-[#383838]">
-        <ul className="flex items-center justify-center h-full overflow-hidden">
+      <div className="nav-container-mobile tab:hidden block h-[64px] fixed w-full bottom-0 sm:text-[14px]  font-[500] text-[#d6d6d6] px-[38px] border border-[#383838]">
+        <ul className="flex items-center justify-center h-full">
           <Link href={"/"} passHref>
             <li className="mr-[2.75rem] nav-item-hover cursor-pointer">
               About

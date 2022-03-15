@@ -4,13 +4,13 @@ import ItemInfo from "../components/ItemInfo";
 import styles from "../styles/Home.module.css";
 
 import { data } from "../components/data";
-import Info from "../components/Main/About/Info";
+import Info from "../components/About/Info";
 
 export default function Home() {
   return (
     <>
       <div className="title pb-1">
-        <div className="text-[32px] text-white font-[600] mb-[25px]">
+        <div className="page-title text-[32px] text-white font-[600] mb-[25px]">
           About Me
           <h1 className="title-separate mt-2"></h1>
         </div>

@@ -8,14 +8,14 @@ import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 const LeftSidebar = () => {
   return (
     <div>
-      <div className="left-nav sticky top-[64px] scroll-smooth left-0 border border-[#383838] nav-shadow mx-3 laptop:h-[770px] h-[182px] rounded-[20px] bg-[#1E1E1F] laptop:basis-[20%] p-[30px] laptop:mb-0 mb-[30px] flex laptop:flex-col laptop:justify-center justify-start items-center transition-all duration-[0.3s] ease-in-out">
+      <div className="left-nav sticky top-[64px] scroll-smooth left-0 border border-[#383838] nav-shadow mx-3 laptop:h-[770px] h-[182px]  rounded-[20px] bg-[#1E1E1F] laptop:basis-[20%] p-[30px] laptop:mb-0 mb-[30px] flex laptop:flex-col laptop:justify-center justify-start items-center transition-all duration-[0.3s] ease-in-out">
         <div className="info-name flex laptop:flex-col justify-center items-center">
           <div className="image laptop:block hidden  justify-center items-center laptop:h-[calc(100%-3.75rem)] laptop:w-[calc(100%-3.75rem)] text-[#d6d6d6] image-bg rounded-[32px]">
             <Image
               className=""
               width={177}
               height={173}
-              src="https://art-template.ru/vcard4/assets/images/my-avatar.png"
+              src="https://firebasestorage.googleapis.com/v0/b/vcard-b7a06.appspot.com/o/profile%20picture.jpg?alt=media&token=a618b13d-526f-434c-835c-07c1ac116868"
               alt="profile photo"
             />
           </div>
@@ -24,15 +24,16 @@ const LeftSidebar = () => {
               className=""
               width={120}
               height={120}
-              src="https://art-template.ru/vcard4/assets/images/my-avatar.png"
+              src="https://firebasestorage.googleapis.com/v0/b/vcard-b7a06.appspot.com/o/profile%20picture.jpg?alt=media&token=a618b13d-526f-434c-835c-07c1ac116868"
               alt="profile photo"
             />
           </div>
-          <div>
-            <div className="text-[26px] mb-[16px] whitespace-nowrap font-medium text-white">
+
+          <div className="">
+            <div className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white">
               Bilal Afzaal
             </div>
-            <div className="py-2 px-4 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap">
+            <div className="title-pro py-2 px-4 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap">
               Web Developer
             </div>
           </div>
