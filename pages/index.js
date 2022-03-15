@@ -17,7 +17,7 @@ export default function Home() {
         <p className="text-[16px] font-[300] text-[#D6d6d6] mb-4">
           I'm Creative Director and UI/UX Designer from Sydney, Australia,
           working in web development and print media. I enjoy turning complex
-          problems into simple, beautiful and intuitive designs.
+          problems into simple, beautiful and intuitive designs
         </p>
         <p className="text-[16px] font-[300] text-[#D6d6d6] mb-4">
           My job is to build your website so that it is functional and
