@@ -7,7 +7,7 @@ module.exports = {
     extend: {},
     screens: {
       laptop: "1200px",
-      tab: "850px",
+      tab: "996px",
     },
   },
   plugins: [],
