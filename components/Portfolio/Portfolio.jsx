@@ -1,7 +1,6 @@
 import React from "react";
 import tw from "tailwind-styled-components";
 import Image from "next/image";
-const PortfolioItem = tw.div``;
 
 const Portfolio = ({ item }) => {
   return (
