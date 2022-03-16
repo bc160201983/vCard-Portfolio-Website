@@ -1,5 +1,5 @@
 import React from "react";
-import Portfolio from "../../components/Portfolio/PortfolioList.jsx";
+import PortfolioList from "../../components/Portfolio/PortfolioList.jsx";
 
 import tw from "tailwind-styled-components";
 import { list } from "postcss";
