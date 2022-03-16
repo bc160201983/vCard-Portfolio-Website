@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
 import { GlobalContext } from "../../../components/Context";
-import PortfolioDetail from "../../../components/Portfolio/PortfolioDetail";
+import PortfolioDetail from "../../../components/Portfolio/PortfolioDetail.jsx";
 
 const index = () => {
   const { handleBack } = GlobalContext();
