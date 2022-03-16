@@ -1,5 +1,5 @@
 import React from "react";
-import Portfolio from "../../components/portfolio/Portfolio.jsx";
+import Portfolio from "../../components/Portfolio/PortfolioList.jsx";
 
 import tw from "tailwind-styled-components";
 import { list } from "postcss";
@@ -23,7 +23,7 @@ const portfolio = () => {
           return (
             <Link key={index} href={`/portfolio/${index + 1}`} passHref>
               <a>
-                <Portfolio />
+                <PortfolioList />
               </a>
             </Link>
           );
