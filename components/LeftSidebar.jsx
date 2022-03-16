@@ -8,7 +8,7 @@ import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 const LeftSidebar = () => {
   return (
     <div>
-      <div className="left-nav sticky top-[64px] scroll-smooth left-0 border border-[#383838] nav-shadow mx-3 lg:h-[770px] h-[182px]  rounded-[20px] bg-[#1E1E1F] laptop:basis-[20%] p-[30px] laptop:mb-0 mb-[30px] flex laptop:flex-col laptop:justify-center justify-start items-center transition-all duration-[0.3s] ease-in-out">
+      <div className="left-nav sticky top-[64px] left-0 scroll-smooth border border-[#383838] nav-shadow mx-3 lg:h-[770px] h-[182px]  rounded-[20px] bg-[#1E1E1F] lg:basis-[20%] p-[30px] lg:mb-0 mb-[30px] flex lg:flex-col lg:justify-center justify-start items-center transition-all duration-[0.3s] ease-in-out">
         <div className="info-name flex lg:flex-col justify-center items-center">
           <div className="image lg:block hidden  justify-center items-center  lg:w-[calc(100%-3.75rem)] text-[#d6d6d6] image-bg rounded-[32px]">
             <Image

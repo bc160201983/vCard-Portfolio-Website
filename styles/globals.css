@@ -31,9 +31,9 @@ body {
   .nav-item-hover {
     @apply hover:transition-all hover:duration-300 hover:ease-in-out hover:opacity-60;
   }
-  .img-main-portifolio {
-    @apply hover:transform hover:scale-[1.05] hover:transition-all hover:duration-300 hover:ease-in-out;
-  }
+  /* .img-main-portifolio {
+    @apply hover:transform hover:scale-[1.05] hover:transition-all hover:duration-300 hover:ease-in-out hover:rounded-[16px];
+  } */
 }
 
 @layer utilities {

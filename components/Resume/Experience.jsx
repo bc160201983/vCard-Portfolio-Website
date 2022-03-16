@@ -6,7 +6,11 @@ const Experience = () => {
     <div>
       <div className="title-h2 flex justify-start items-center mb-[20px]">
         <div className="icon-book box icon-box box--s2 mr-4 h-[48px] w-[48px] flex justify-center items-center rounded-xl">
-          <Image src={briefcase} className="h-[18px] w-[18px] text-[#ffdb6e]" />
+          <Image
+            src={briefcase}
+            className="h-[18px] w-[18px] text-[#ffdb6e]"
+            alt="icon"
+          />
         </div>
         <div className="main-title text-[24px] font-semibold text-white">
           Experience

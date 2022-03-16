@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { FiLayers } from "react-icons/fi";
@@ -12,7 +13,9 @@ const PortfolioDetail = () => {
           UI Kit + Charts Kit
         </h1>
         <div className="image-wrapper h-[25rem] ml-[-30px] mr-[-30px] relative">
-          <img
+          <Image
+            layout="fill"
+            objectFit="cover"
             className="object-cover object-center h-full w-full"
             src="https://art-template.ru/vcard4/assets/images/projects/project-1.jpg"
             alt=""

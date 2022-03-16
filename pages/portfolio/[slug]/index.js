@@ -1,10 +1,10 @@
-import { useRouter } from "next/router";
 import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
+import { GlobalContext } from "../../../components/Context";
 import PortfolioDetail from "../../../components/Portfolio/PortfolioDetail";
 
 const index = () => {
-  const router = useRouter();
+  const { handleBack } = GlobalContext();
   return (
     <div>
       <div className="title pb-1">
@@ -14,7 +14,7 @@ const index = () => {
         </div>
       </div>
       <div
-        onClick={() => router.back()}
+        onClick={handleBack}
         className="btn-back flex justify-start items-center cursor-pointer"
       >
         <div className="icon-back mr-2">

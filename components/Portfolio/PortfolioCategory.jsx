@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import tw from "tailwind-styled-components";
 const Ul = tw.ul`flex`;
-const UlMobile = tw.ul`absolute w-full rounded-2xl border border-[#383838] left-[0px] top-[55px] bg-[#1E1E1F] max-h-[600px] py-[9px] pb-[16px]`;
+const UlMobile = tw.ul`absolute w-full rounded-2xl border border-[#383838] left-[0px] top-[55px] bg-[#1E1E1F] max-h-[600px] py-[9px] pb-[16px] z-50`;
 const Li = tw.li`pr-[19px] font-medium cursor-pointer capitalize nav-item-hover`;
 const LiMobile = tw.li`pr-[19px] capitalize font-medium cursor-pointer  py-2 px-4 hover:bg-[#2A2A2B] hover:text-[#FFDB6E] `;
 const MobileCategory = tw.div`sm:hidden block`;
