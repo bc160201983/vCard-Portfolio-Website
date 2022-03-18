@@ -5,15 +5,13 @@ import styles from "../styles/Home.module.css";
 
 import { data } from "../components/data";
 import Info from "../components/About/Info";
+import PageTitle from "../components/PageTitle";
 
 export default function Home() {
   return (
     <>
       <div className="title pb-1">
-        <div className="page-title text-[32px] text-white font-[600] mb-[25px]">
-          About Me
-          <h1 className="title-separate mt-2"></h1>
-        </div>
+        <PageTitle title={"About Me"} />
         <p className="text-[16px] font-[300] text-[#D6d6d6] mb-4">
           I'm Creative Director and UI/UX Designer from Sydney, Australia,
           working in web development and print media. I enjoy turning complex
@@ -32,7 +30,7 @@ export default function Home() {
         What I'm Doing
       </div>
       <div className="grid-info">
-        <div className="text-[#d6d6d6] grid tab:grid-cols-2 grid-cols-1">
+        <div className="text-[#d6d6d6] grid lg:grid-cols-2 grid-cols-1">
           {data.map((item) => (
             <Info key={item.id} {...item} />
           ))}

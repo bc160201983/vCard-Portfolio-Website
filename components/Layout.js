@@ -22,8 +22,10 @@ const Layout = ({ children }) => {
             <NavBar />
             <div className="main">{children}</div>
           </div>
+          <div className="spacer invisible h-[64px]"> . </div>
         </div>
       </div>
+
       <MobileNavBar />
     </>
   );

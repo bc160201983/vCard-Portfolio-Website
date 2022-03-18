@@ -29,14 +29,35 @@ const NavBar = () => {
           <Link href={"/portfolio"} passHref>
             <li
               className={`mr-[30px] nav-item-hover cursor-pointer ${
-                router.pathname == "/portfolio" ? `active` : ""
+                router.pathname == "/portfolio" ||
+                router.pathname == "/portfolio/[slug]"
+                  ? `active`
+                  : ""
               }`}
             >
               Portfolio
             </li>
           </Link>
-          <li className="mr-[30px] nav-item-hover cursor-pointer">Blog</li>
-          <li className="nav-item-hover cursor-pointer">Contact</li>
+          <Link href={"/blog"} passHref>
+            <li
+              className={`mr-[30px] nav-item-hover cursor-pointer ${
+                router.pathname == "/blog" || router.pathname == "/blog/[slug]"
+                  ? `active`
+                  : ""
+              }`}
+            >
+              Blog
+            </li>
+          </Link>
+          <Link href={"/contact"} passHref>
+            <li
+              className={`mr-[30px] nav-item-hover cursor-pointer ${
+                router.pathname == "/contact" ? `active` : ""
+              }`}
+            >
+              Contact
+            </li>
+          </Link>
         </ul>
       </div>
     </div>

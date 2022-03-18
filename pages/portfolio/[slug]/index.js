@@ -1,6 +1,7 @@
 import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
 import { GlobalContext } from "../../../components/Context";
+import PageTitle from "../../../components/PageTitle";
 import PortfolioDetail from "../../../components/Portfolio/PortfolioDetail.jsx";
 
 const index = () => {
@@ -8,10 +9,7 @@ const index = () => {
   return (
     <div>
       <div className="title pb-1">
-        <div className="text-[32px] text-white font-[600] mb-[25px] page-title">
-          Portfolio
-          <h1 className="title-separate mt-2"></h1>
-        </div>
+        <PageTitle title={"portfolio"} />
       </div>
       <div
         onClick={handleBack}

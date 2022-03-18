@@ -5,6 +5,7 @@ import tw from "tailwind-styled-components";
 import { list } from "postcss";
 import PortfolioCategory from "../../components/Portfolio/PortfolioCategory";
 import Link from "next/link";
+import PageTitle from "../../components/PageTitle.jsx";
 const PortfolioWrapper = tw.div`grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 cursor-pointer `;
 
 const portfolio = () => {
@@ -12,10 +13,7 @@ const portfolio = () => {
   return (
     <>
       <div className="title pb-1">
-        <div className="text-[32px] text-white font-[600] mb-[25px] page-title">
-          Portfolio
-          <h1 className="title-separate mt-2"></h1>
-        </div>
+        <PageTitle title={"portfolio"} />
       </div>
       <PortfolioCategory />
       <PortfolioWrapper className="portfolio-list  portfolio-grid transition-all duration-[0.3s] ease-in-out">

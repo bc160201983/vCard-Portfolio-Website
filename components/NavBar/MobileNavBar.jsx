@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 const MobileNavBar = () => {
   const router = useRouter();
+
   return (
     <div>
       <div className="nav-container-mobile lg:hidden block h-[64px] fixed w-full bottom-0 sm:text-[14px]  font-[500] text-[#d6d6d6] px-[38px] border border-[#383838]">
@@ -28,14 +29,34 @@ const MobileNavBar = () => {
           <Link href={"/portfolio"} passHref>
             <li
               className={`mr-[30px] nav-item-hover cursor-pointer ${
-                router.pathname == "/portfolio" ? `active` : ""
+                router.pathname == "/portfolio" ||
+                router.pathname == "/portfolio/[slug]"
+                  ? `active`
+                  : ""
               }`}
             >
               Portfolio
             </li>
           </Link>
-          <li className="mr-[30px] nav-item-hover cursor-pointer">Blog</li>
-          <li className="nav-item-hover cursor-pointer">Contact</li>
+          <Link href={"/blog"} passHref>
+            <li
+              className={`mr-[30px] nav-item-hover cursor-pointer ${
+                router.pathname === "/blog" ||
+                router.pathname === "/blog/[slug]"
+                  ? `active`
+                  : ""
+              }`}
+            >
+              Blog
+            </li>
+          </Link>
+          <li
+            className={`mr-[30px] nav-item-hover cursor-pointer ${
+              router.pathname == "/contact" ? `active` : ""
+            }`}
+          >
+            Contact
+          </li>
         </ul>
       </div>
     </div>

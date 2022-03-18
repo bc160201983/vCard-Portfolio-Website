@@ -1,4 +1,5 @@
 import React from "react";
+import PageTitle from "../components/PageTitle";
 
 import Education from "../components/Resume/Education";
 import Experience from "../components/Resume/Experience";
@@ -8,10 +9,7 @@ const resume = () => {
   return (
     <>
       <div className="title pb-1">
-        <div className="text-[32px] page-title text-white font-[600] mb-[25px]">
-          Resume
-          <h1 className="title-separate mt-2"></h1>
-        </div>
+        <PageTitle title={"Resume"} />
       </div>
       <Education />
       <Experience />

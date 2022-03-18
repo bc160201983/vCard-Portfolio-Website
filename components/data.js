@@ -24,7 +24,7 @@ export const data = [
     desc: "Professional development of applications for iOS and Android.",
   },
   {
-    id: 3,
+    id: 4,
     title: "Photography",
     img: "https://art-template.ru/vcard4/assets/icons/icon-photo.svg",
     desc: "I make high-quality photos of any category at a professional level.",
