@@ -9,26 +9,26 @@ const Comments = () => {
         Comments (3)
       </h2>
       <div className="comment-box">
-        <div class="comment-box__inner box box--s2">
-          <figure class="box box-avatar box-avatar--not-border">
+        <div className="comment-box__inner box box--s2">
+          <figure className="box box-avatar box-avatar--not-border">
             <img
               src="https://art-template.ru/vcard4/assets/images/avatar-1.png"
               alt="Daniel Lewis"
             />
           </figure>
-          <div class="comment-box__body">
-            <h3 class="comment-box__details">
+          <div className="comment-box__body">
+            <h3 className="comment-box__details">
               <span>Daniel Lewis</span>
-              <span class="comment-box__details-date">5 min ago</span>
+              <span className="comment-box__details-date">5 min ago</span>
             </h3>
             <p>
               Very interesting and informative article on design. I learned a
               lot.
             </p>
 
-            <ul class="comment-box__footer">
+            <ul className="comment-box__footer">
               <li>
-                <a href="#" class="link-gradient">
+                <a href="#" className="link-gradient">
                   Reply
                 </a>
               </li>
@@ -36,31 +36,31 @@ const Comments = () => {
           </div>
         </div>
 
-        <div class="comment-box">
-          <div class="comment-box__inner box box--s2">
-            <figure class="box box-avatar box-avatar--not-border">
+        <div className="comment-box">
+          <div className="comment-box__inner box box--s2">
+            <figure className="box box-avatar box-avatar--not-border">
               <img
                 src="https://art-template.ru/vcard4/assets/images/avatar-2.png"
                 alt="Daniel Lewis"
               />
             </figure>
-            <div class="comment-box__body">
-              <h3 class="comment-box__details">
+            <div className="comment-box__body">
+              <h3 className="comment-box__details">
                 <span>Jessica Miller</span>
-                <span class="comment-box__details-date">1 min ago</span>
+                <span className="comment-box__details-date">1 min ago</span>
               </h3>
               <p>
                 I agree, a very interesting article. Thank you very much!
                 <img
-                  class="emoji"
+                  className="emoji"
                   src="../assets/icons/emoji/emoji-nerd.svg"
                   alt="nerd"
                 />
               </p>
 
-              <ul class="comment-box__footer">
+              <ul className="comment-box__footer">
                 <li>
-                  <a href="#" class="link-gradient">
+                  <a href="#" className="link-gradient">
                     Reply
                   </a>
                 </li>

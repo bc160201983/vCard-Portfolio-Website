@@ -40,17 +40,17 @@ const BlogDetails = () => {
           lives. Creativity is to discover a question that has never been asked.
         </p>
       </div>
-      <footer class="footer-post">
-        <a class="footer-post__share" href="http://facebook.com">
-          <i class="font-icon icon-facebook"></i>
+      <footer className="footer-post">
+        <a className="footer-post__share" href="http://facebook.com">
+          <i className="font-icon icon-facebook"></i>
           <span>Facebook</span>
         </a>
-        <a class="footer-post__share" href="http://twitter.com">
+        <a className="footer-post__share" href="http://twitter.com">
           <i class="font-icon icon-twitter"></i>
           <span>Twitter</span>
         </a>
-        <a class="footer-post__share" href="http://linkedin.com">
-          <i class="font-icon icon-linkedin2"></i>
+        <a className="footer-post__share" href="http://linkedin.com">
+          <i className="font-icon icon-linkedin2"></i>
           <span>Linkedin</span>
         </a>
       </footer>

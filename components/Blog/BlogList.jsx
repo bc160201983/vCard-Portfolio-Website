@@ -3,20 +3,20 @@ import React from "react";
 const BlogList = () => {
   return (
     <div>
-      <article class="news-item box box--s2">
-        <div class="news-item__image-wrap">
-          <a class="news-item__link" href="single-post.html"></a>
+      <article className="news-item box box--s2">
+        <div className="news-item__image-wrap">
+          <a className="news-item__link" href="single-post.html"></a>
           <img
-            class="cover ls-is-cached lazyloaded"
+            className="cover ls-is-cached lazyloaded"
             src="https://art-template.ru/vcard4/assets/images/news/news-1.jpg"
             alt=""
           />
         </div>
-        <div class="news-item__caption">
-          <div class="news-item__date">
+        <div className="news-item__caption">
+          <div className="news-item__date">
             <span>Design</span>Sep 16, 2021
           </div>
-          <h2 class="title title--h2">
+          <h2 className="title title--h2">
             <a href="single-post.html">Design Conferences in 2019</a>
           </h2>
           <p>
