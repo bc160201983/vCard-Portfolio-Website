@@ -1,6 +1,7 @@
 import React from "react";
 import { FiSend } from "react-icons/fi";
 import { BsFacebook } from "react-icons/bs";
+import Image from "next/image";
 
 const Comments = () => {
   return (
@@ -11,7 +12,9 @@ const Comments = () => {
       <div className="comment-box">
         <div className="comment-box__inner box box--s2">
           <figure className="box box-avatar box-avatar--not-border">
-            <img
+            <Image
+              height="80px"
+              width="80px"
               src="https://art-template.ru/vcard4/assets/images/avatar-1.png"
               alt="Daniel Lewis"
             />
@@ -39,7 +42,9 @@ const Comments = () => {
         <div className="comment-box">
           <div className="comment-box__inner box box--s2">
             <figure className="box box-avatar box-avatar--not-border">
-              <img
+              <Image
+                height="80px"
+                width="80px"
                 src="https://art-template.ru/vcard4/assets/images/avatar-2.png"
                 alt="Daniel Lewis"
               />
@@ -51,11 +56,11 @@ const Comments = () => {
               </h3>
               <p>
                 I agree, a very interesting article. Thank you very much!
-                <img
+                {/* <img
                   className="emoji"
                   src="../assets/icons/emoji/emoji-nerd.svg"
                   alt="nerd"
-                />
+                /> */}
               </p>
 
               <ul className="comment-box__footer">
@@ -72,7 +77,9 @@ const Comments = () => {
       <div className="comment-box">
         <div className="comment-box__inner box box--s2">
           <figure className="box box-avatar box-avatar--not-border">
-            <img
+            <Image
+              height="80px"
+              width="80px"
               src="https://art-template.ru/vcard4/assets/images/avatar-1.png"
               alt="Daniel Lewis"
             />
@@ -122,14 +129,14 @@ const Comments = () => {
         </li>
       </ul> */}
       {/* comment forum */}
-      <form class="comment-form">
+      <form className="comment-form">
         <textarea
           id="commentForm"
           className="textarea form-control"
           required="required"
           placeholder="Write a Comment..."
           rows="1"
-          tabindex="1"
+          tabIndex="1"
           style={{
             overflow: "hidden",
             overflowWrap: "break-word",

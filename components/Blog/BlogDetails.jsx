@@ -46,7 +46,7 @@ const BlogDetails = () => {
           <span>Facebook</span>
         </a>
         <a className="footer-post__share" href="http://twitter.com">
-          <i class="font-icon icon-twitter"></i>
+          <i className="font-icon icon-twitter"></i>
           <span>Twitter</span>
         </a>
         <a className="footer-post__share" href="http://linkedin.com">
