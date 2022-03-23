@@ -6,7 +6,7 @@ import Image from "next/image";
 const Comments = () => {
   return (
     <div>
-      <h2 className="mb-[20px] text-[24px] font-semibold text-white">
+      <h2 className="title--h2 mb-[20px] text-[24px] font-semibold text-white">
         Comments (3)
       </h2>
       <div className="comment-box">
@@ -54,14 +54,7 @@ const Comments = () => {
                 <span>Jessica Miller</span>
                 <span className="comment-box__details-date">1 min ago</span>
               </h3>
-              <p>
-                I agree, a very interesting article. Thank you very much!
-                {/* <img
-                  className="emoji"
-                  src="../assets/icons/emoji/emoji-nerd.svg"
-                  alt="nerd"
-                /> */}
-              </p>
+              <p>I agree, a very interesting article. Thank you very much!</p>
 
               <ul className="comment-box__footer">
                 <li>
@@ -149,23 +142,6 @@ const Comments = () => {
             <FiSend className="submit-icon h-[18px] w-[18px] text-[#ffdb6e]" />
           </div>
         </button>
-        <div className="dropdown dropup">
-          <button
-            type="button"
-            className="btn btn-emoji"
-            id="dropdownEmoji"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-          >
-            <i className="font-icon icon-smile"></i>
-          </button>
-          <div
-            className="dropdown-menu dropdown-menu-center"
-            aria-labelledby="dropdownEmoji"
-          >
-            <div className="emoji-wrap"></div>
-          </div>
-        </div>
       </form>
     </div>
   );

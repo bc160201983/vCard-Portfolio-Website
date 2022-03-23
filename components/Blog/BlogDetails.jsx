@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Comments from "./Comments";
+import { FaFacebookF } from "react-icons/fa";
 const BlogDetails = () => {
   return (
     <div>
       <header className="mt-[1rem] text-center">
-        <h1 className="title title--h1 text-[40px] mb-[1.5rem] text-white font-semibold">
+        <h1 className="title title--h1 lg:text-[40px] md:text-[36px] sm:text-[2rem] mb-[1.5rem] text-white font-semibold">
           Web design Weekly #38
         </h1>
         <div className="post-caption mx-auto mb-[2rem] w-[90%]">
@@ -16,7 +17,7 @@ const BlogDetails = () => {
             outcomes.
           </p>
         </div>
-        <div className="h-[25rem] ml-[-30px] mr-[-30px] relative mb-[2.5rem]">
+        <div className="image-wrapper h-[25rem] ml-[-30px] mr-[-30px] relative mb-[2.5rem]">
           <Image
             layout="fill"
             objectFit="cover"
@@ -41,8 +42,10 @@ const BlogDetails = () => {
         </p>
       </div>
       <footer className="footer-post">
-        <a className="footer-post__share" href="http://facebook.com">
-          <i className="font-icon icon-facebook"></i>
+        <a
+          className="footer-post__share items-center"
+          href="http://facebook.com"
+        >
           <span>Facebook</span>
         </a>
         <a className="footer-post__share" href="http://twitter.com">

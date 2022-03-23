@@ -12,7 +12,7 @@ const index = () => {
           <h1 className="title-separate mt-2"></h1>
         </div>
       </div>
-      <div className="grid grid-cols-2 ">
+      <div className="grid md:grid-cols-2 grid-cols-1">
         {list.map((item, index) => {
           return (
             <Link key={index} href={`/blog/${index + 1}`} passHref>

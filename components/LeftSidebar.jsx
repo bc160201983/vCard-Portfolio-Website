@@ -3,7 +3,7 @@ import ItemInfo from "./ItemInfo";
 import Image from "next/image";
 import { FiMail, FiSmartphone, FiCalendar } from "react-icons/fi";
 import { MdOutlineAddLocationAlt } from "react-icons/md";
-import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiInstagram, FiBookOpen } from "react-icons/fi";
 
 const LeftSidebar = () => {
   return (
@@ -33,8 +33,11 @@ const LeftSidebar = () => {
             <div className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white">
               Bilal Afzaal
             </div>
-            <div className="title-pro py-2 px-4 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap">
+            <div className="title-pro py-2 px-4 text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap mb-2">
               Web Developer
+            </div>
+            <div className="title-pro cursor-pointer hover:opacity-60 text-center py-2 px-2 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap">
+              Download CV
             </div>
           </div>
           <div className="hid hidden lg:block">
@@ -46,15 +49,15 @@ const LeftSidebar = () => {
                 icons={<FiMail className="h-[18px] w-[18px] text-[#ffdb6e]" />}
               />
               <ItemInfo
-                title={"phone"}
-                info={"+92(340) 7719929"}
+                title={"Education"}
+                info={"BS Computer Science"}
                 icons={
-                  <FiSmartphone className="h-[18px] w-[18px] text-[#ffdb6e]" />
+                  <FiBookOpen className="h-[18px] w-[18px] text-[#ffdb6e]" />
                 }
               />
               <ItemInfo
                 title={"birthday"}
-                info={"December 12, 1993"}
+                info={"December 12"}
                 icons={
                   <FiCalendar className="h-[18px] w-[18px] text-[#ffdb6e]" />
                 }
@@ -68,13 +71,13 @@ const LeftSidebar = () => {
               />
             </div>
             <div className="social-icons flex justify-evenly w-full items-center">
-              <div className="facebook">
-                <FiFacebook className="text-[#d6d6d6] text-[18px]" />
+              <div className="facebook cursor-pointer">
+                <FiLinkedin className="text-[#d6d6d6] text-[18px]" />
               </div>
-              <div className="facebook">
-                <FiTwitter className="text-[#d6d6d6] text-[18px]" />
+              <div className="facebook cursor-pointer">
+                <FiGithub className="text-[#d6d6d6] text-[18px]" />
               </div>
-              <div className="facebook">
+              <div className="facebook cursor-pointer">
                 <FiInstagram className="text-[#d6d6d6] text-[18px]" />
               </div>
             </div>
