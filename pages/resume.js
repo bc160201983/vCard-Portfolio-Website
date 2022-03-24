@@ -22,7 +22,8 @@ const resume = ({ education }) => {
 
 export default resume;
 export async function getStaticProps(context) {
-  const education = [];
+  let education = [];
+
   const querySnapshot = await getDocs(collection(db, "education"));
   querySnapshot.forEach((doc) => {
     // doc.data() is never undefined for query doc snapshots

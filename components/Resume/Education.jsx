@@ -1,7 +1,6 @@
 import React from "react";
 import { HiOutlineBookOpen } from "react-icons/hi";
 const Education = ({ education }) => {
-  console.log(education);
   return (
     <div>
       <div className="title-h2 flex justify-start items-center mb-[20px]">
@@ -15,7 +14,7 @@ const Education = ({ education }) => {
       <div className="timeline">
         {education.map((edu) => {
           return (
-            <article className="timeline__item">
+            <article className="timeline__item" key={edu.id}>
               <h5 className="title title--h4 timeline__title">
                 {edu.institute}
               </h5>
