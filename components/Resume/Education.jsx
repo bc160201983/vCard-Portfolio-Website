@@ -1,5 +1,7 @@
 import React from "react";
 import { HiOutlineBookOpen } from "react-icons/hi";
+import { motion } from "framer-motion";
+import { fadeInUp, stagger } from "../../animation";
 const Education = ({ education }) => {
   return (
     <div>
@@ -11,23 +13,30 @@ const Education = ({ education }) => {
           Education
         </div>
       </div>
-      <div className="timeline">
+      <motion.div
+        variants={stagger}
+        initial="initial"
+        animate="animate"
+        className="timeline"
+      >
         {education.map((edu) => {
           return (
-            <article className="timeline__item" key={edu.id}>
-              <h5 className="title title--h4 timeline__title">
-                {edu.institute}
-              </h5>
-              <span className="timeline__period">
-                {edu.from} — {edu.to}
-              </span>
-              <p className="timeline__description fonr-[300] text-[15px]">
-                {edu.description}
-              </p>
-            </article>
+            <motion.div key={edu.id} variants={fadeInUp}>
+              <article className="timeline__item">
+                <h5 className="title title--h4 timeline__title">
+                  {edu.institute}
+                </h5>
+                <span className="timeline__period">
+                  {edu.from} — {edu.to}
+                </span>
+                <p className="timeline__description fonr-[300] text-[15px]">
+                  {edu.description}
+                </p>
+              </article>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

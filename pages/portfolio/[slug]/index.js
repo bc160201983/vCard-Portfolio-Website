@@ -1,10 +1,12 @@
+import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import React from "react";
 import { IoMdArrowBack } from "react-icons/io";
 import { GlobalContext } from "../../../components/Context";
+import { db } from "../../../components/firebase";
 import PageTitle from "../../../components/PageTitle";
 import PortfolioDetail from "../../../components/Portfolio/PortfolioDetail.jsx";
 
-const index = () => {
+const index = ({ portfolio }) => {
   const { handleBack } = GlobalContext();
   return (
     <div>
@@ -20,9 +22,41 @@ const index = () => {
         </div>
         <div className="text-back">Back Portfolio</div>
       </div>
-      <PortfolioDetail />
+      <PortfolioDetail portfolioData={portfolio} />
     </div>
   );
 };
 
 export default index;
+
+export async function getStaticProps(context) {
+  const { params } = context;
+
+  const portRef = doc(db, "portfolio", params.slug);
+  const docSnap = await getDoc(portRef);
+  const portfolio = docSnap.data();
+
+  return {
+    props: { portfolio }, // will be passed to the page component as props
+  };
+}
+
+export async function getStaticPaths() {
+  let portfolio = [];
+
+  const querySnapshot = await getDocs(collection(db, "portfolio"));
+  querySnapshot.forEach((doc) => {
+    portfolio.push({
+      id: doc.id,
+    });
+  });
+
+  const paths = portfolio.map((port) => ({
+    params: { slug: port.id },
+  }));
+
+  return {
+    paths,
+    fallback: false, // false or 'blocking'
+  };
+}

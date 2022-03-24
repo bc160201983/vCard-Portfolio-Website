@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import briefcase from "../../public/briefcase.svg";
-const Experience = () => {
+import { fadeInUp, stagger } from "../../animation";
+import { motion } from "framer-motion";
+const Experience = ({ experience }) => {
   return (
     <div>
       <div className="title-h2 flex justify-start items-center mb-[20px]">
@@ -16,32 +18,30 @@ const Experience = () => {
           Experience
         </div>
       </div>
-      <div className="timeline">
-        <article className="timeline__item">
-          <h5 className="title title--h4 timeline__title">Creative Director</h5>
-          <span className="timeline__period">2015 — Present</span>
-          <p className="timeline__description fonr-[300] text-[15px]">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit
-            atque corrupti, quos dolores et quas molestias exceptur.
-          </p>
-        </article>
-        <article className="timeline__item">
-          <h5 className="title title--h4 timeline__title">Art Director</h5>
-          <span className="timeline__period">2013 — 2015</span>
-          <p className="timeline__description fonr-[300] text-[15px]">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit
-            atque corrupti, quos dolores et quas molestias exceptur.
-          </p>
-        </article>
-        <article className="timeline__item">
-          <h5 className="title title--h4 timeline__title">Web Designer</h5>
-          <span className="timeline__period">2010 — 2013</span>
-          <p className="timeline__description fonr-[300] text-[15px]">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit
-            atque corrupti, quos dolores et quas molestias exceptur.
-          </p>
-        </article>
-      </div>
+      <motion.div
+        variants={stagger}
+        initial="initial"
+        animate="animate"
+        className="timeline"
+      >
+        {experience.map((ex) => {
+          return (
+            <motion.div key={ex.id} variants={fadeInUp}>
+              <article className="timeline__item">
+                <h5 className="title title--h4 timeline__title">
+                  {ex.company}
+                </h5>
+                <span className="timeline__period">
+                  {ex.Exfrom} — {ex.Exto}
+                </span>
+                <p className="timeline__description fonr-[300] text-[15px]">
+                  {ex.Exdescription}
+                </p>
+              </article>
+            </motion.div>
+          );
+        })}
+      </motion.div>
     </div>
   );
 };

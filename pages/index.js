@@ -6,12 +6,15 @@ import styles from "../styles/Home.module.css";
 import { data } from "../components/data";
 import Info from "../components/About/Info";
 import PageTitle from "../components/PageTitle";
+import { motion } from "framer-motion";
+import { fadeInUp, stagger } from "../animation";
 
 export default function Home() {
   return (
     <>
       <div className="title pb-1">
         <PageTitle title={"About Me"} />
+
         <p className="text-[16px] font-[300] text-[#D6d6d6] mb-4">
           I'm Creative Director and UI/UX Designer from Sydney, Australia,
           working in web development and print media. I enjoy turning complex
@@ -30,11 +33,18 @@ export default function Home() {
         What I'm Doing
       </div>
       <div className="grid-info">
-        <div className="text-[#d6d6d6] grid lg:grid-cols-2 grid-cols-1">
+        <motion.div
+          variants={stagger}
+          initial="initial"
+          animate="animate"
+          className="text-[#d6d6d6] grid lg:grid-cols-2 grid-cols-1"
+        >
           {data.map((item) => (
-            <Info key={item.id} {...item} />
+            <motion.div key={item.id} variants={fadeInUp} className="pr-5">
+              <Info {...item} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );

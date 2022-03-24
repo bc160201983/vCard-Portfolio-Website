@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Info = ({ title, img, desc }) => {
   return (
-    <div className="pr-5">
+    <>
       <div className="info-grid flex rounded-[16px] mb-[30px] px-[30px] pt-[30px] pb-[20px] box-info-shadow box-inner box--s2 box">
         <div className="icon-info  mr-4">
           <Image
@@ -21,7 +21,7 @@ const Info = ({ title, img, desc }) => {
           <div className="font-light text-[14px]">{desc}</div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
