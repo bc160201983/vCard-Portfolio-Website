@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   try {
     await res.unstable_revalidate("/resume");
-    return res.json({ revalidated: true });
+    return res.json({ revalidated: true, msg: "resume" });
   } catch (err) {
     // If there was an error, Next.js will continue
     // to show the last successfully generated page
