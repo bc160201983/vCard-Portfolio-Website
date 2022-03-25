@@ -30,35 +30,38 @@ const LeftSidebar = ({ about }) => {
           </div>
 
           <div className="flex flex-col justify-start items-center">
-            {about.map((a, index) => (
-              <div
-                key={index}
-                className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white"
-              >
-                {a.title}
-              </div>
-            ))}
+            {about &&
+              about.map((a, index) => (
+                <div
+                  key={index}
+                  className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white"
+                >
+                  {a.title}
+                </div>
+              ))}
 
-            {about.map((a, index) => (
-              <div
-                key={index}
-                className="title-pro py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2"
-              >
-                {a.captionRef}
-              </div>
-            ))}
+            {about &&
+              about.map((a, index) => (
+                <div
+                  key={index}
+                  className="title-pro py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2"
+                >
+                  {a.captionRef}
+                </div>
+              ))}
 
-            {about.map((a, index) => (
-              <a
-                key={index}
-                rel="noreferrer"
-                target="_blank"
-                href={a.image}
-                className="title-pro cursor-pointer hover:opacity-60 text-center py-2 px-2 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap"
-              >
-                Download CV
-              </a>
-            ))}
+            {about &&
+              about.map((a, index) => (
+                <a
+                  key={index}
+                  rel="noreferrer"
+                  target="_blank"
+                  href={a.image}
+                  className="title-pro cursor-pointer hover:opacity-60 text-center py-2 px-2 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap"
+                >
+                  Download CV
+                </a>
+              ))}
           </div>
           <div className="hid hidden lg:block">
             <div className="sepration my-8 w-full bg-[#383838] h-[1px] text-[#d6d6d6]"></div>
@@ -91,30 +94,31 @@ const LeftSidebar = ({ about }) => {
               />
             </div>
 
-            {about.map((a, index) => {
-              return (
-                <div
-                  key={index}
-                  className="social-icons flex justify-evenly w-full items-center"
-                >
-                  <div className="facebook cursor-pointer">
-                    <a rel="noreferrer" href={a.linkedInUrl} target="_blank">
-                      <FiLinkedin className="text-[#d6d6d6] text-[18px]" />
-                    </a>
+            {about &&
+              about.map((a, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="social-icons flex justify-evenly w-full items-center"
+                  >
+                    <div className="facebook cursor-pointer">
+                      <a rel="noreferrer" href={a.linkedInUrl} target="_blank">
+                        <FiLinkedin className="text-[#d6d6d6] text-[18px]" />
+                      </a>
+                    </div>
+                    <div className="facebook cursor-pointer">
+                      <a rel="noreferrer" href={a.gitHubUrl} target="_blank">
+                        <FiGithub className="text-[#d6d6d6] text-[18px]" />
+                      </a>
+                    </div>
+                    <div className="facebook cursor-pointer">
+                      <a rel="noreferrer" href={a.instaUrl} target="_blank">
+                        <FiInstagram className="text-[#d6d6d6] text-[18px]" />
+                      </a>
+                    </div>
                   </div>
-                  <div className="facebook cursor-pointer">
-                    <a rel="noreferrer" href={a.gitHubUrl} target="_blank">
-                      <FiGithub className="text-[#d6d6d6] text-[18px]" />
-                    </a>
-                  </div>
-                  <div className="facebook cursor-pointer">
-                    <a rel="noreferrer" href={a.instaUrl} target="_blank">
-                      <FiInstagram className="text-[#d6d6d6] text-[18px]" />
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
           </div>
         </div>
       </div>
