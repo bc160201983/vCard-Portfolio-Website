@@ -37,6 +37,7 @@ const LeftSidebar = ({ about }) => {
               {about[0]?.captionRef}
             </div>
             <a
+              rel="noreferrer"
               target="_blank"
               href={about[0]?.image}
               className="title-pro cursor-pointer hover:opacity-60 text-center py-2 px-2 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap"
@@ -76,17 +77,21 @@ const LeftSidebar = ({ about }) => {
             </div>
             <div className="social-icons flex justify-evenly w-full items-center">
               <div className="facebook cursor-pointer">
-                <a href={about[0]?.linkedInUrl} target="_blank">
+                <a
+                  rel="noreferrer"
+                  href={about[0]?.linkedInUrl}
+                  target="_blank"
+                >
                   <FiLinkedin className="text-[#d6d6d6] text-[18px]" />
                 </a>
               </div>
               <div className="facebook cursor-pointer">
-                <a href={about[0]?.gitHubUrl} target="_blank">
+                <a rel="noreferrer" href={about[0]?.gitHubUrl} target="_blank">
                   <FiGithub className="text-[#d6d6d6] text-[18px]" />
                 </a>
               </div>
               <div className="facebook cursor-pointer">
-                <a href={about[0]?.instaUrl} target="_blank">
+                <a rel="noreferrer" href={about[0]?.instaUrl} target="_blank">
                   <FiInstagram className="text-[#d6d6d6] text-[18px]" />
                 </a>
               </div>

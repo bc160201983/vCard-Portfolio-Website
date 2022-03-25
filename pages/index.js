@@ -19,7 +19,7 @@ export default function Home({ about }) {
 
         <div
           className="ql-editor text-[15px] font-[300] text-[#D6d6d6] mb-4"
-          dangerouslySetInnerHTML={{ __html: about[0].description }}
+          dangerouslySetInnerHTML={{ __html: about[0]?.description }}
         />
 
         {/* <p className="text-[16px] font-[300] text-[#D6d6d6] mb-4">
