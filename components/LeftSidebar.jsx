@@ -30,20 +30,27 @@ const LeftSidebar = ({ about }) => {
           </div>
 
           <div className="flex flex-col justify-start items-center">
-            {about.map((a) => (
-              <div className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white">
+            {about.map((a, index) => (
+              <div
+                key={index}
+                className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white"
+              >
                 {a.title}
               </div>
             ))}
 
-            {about.map((a) => (
-              <div className="title-pro py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2">
+            {about.map((a, index) => (
+              <div
+                key={index}
+                className="title-pro py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2"
+              >
                 {a.captionRef}
               </div>
             ))}
 
-            {about.map((a) => (
+            {about.map((a, index) => (
               <a
+                key={index}
                 rel="noreferrer"
                 target="_blank"
                 href={a.image}
@@ -83,29 +90,31 @@ const LeftSidebar = ({ about }) => {
                 }
               />
             </div>
-            <div className="social-icons flex justify-evenly w-full items-center">
-              {about.map((a) => {
-                return (
-                  <>
-                    <div className="facebook cursor-pointer">
-                      <a rel="noreferrer" href={a.linkedInUrl} target="_blank">
-                        <FiLinkedin className="text-[#d6d6d6] text-[18px]" />
-                      </a>
-                    </div>
-                    <div className="facebook cursor-pointer">
-                      <a rel="noreferrer" href={a.gitHubUrl} target="_blank">
-                        <FiGithub className="text-[#d6d6d6] text-[18px]" />
-                      </a>
-                    </div>
-                    <div className="facebook cursor-pointer">
-                      <a rel="noreferrer" href={a.instaUrl} target="_blank">
-                        <FiInstagram className="text-[#d6d6d6] text-[18px]" />
-                      </a>
-                    </div>
-                  </>
-                );
-              })}
-            </div>
+
+            {about.map((a, index) => {
+              return (
+                <div
+                  key={index}
+                  className="social-icons flex justify-evenly w-full items-center"
+                >
+                  <div className="facebook cursor-pointer">
+                    <a rel="noreferrer" href={a.linkedInUrl} target="_blank">
+                      <FiLinkedin className="text-[#d6d6d6] text-[18px]" />
+                    </a>
+                  </div>
+                  <div className="facebook cursor-pointer">
+                    <a rel="noreferrer" href={a.gitHubUrl} target="_blank">
+                      <FiGithub className="text-[#d6d6d6] text-[18px]" />
+                    </a>
+                  </div>
+                  <div className="facebook cursor-pointer">
+                    <a rel="noreferrer" href={a.instaUrl} target="_blank">
+                      <FiInstagram className="text-[#d6d6d6] text-[18px]" />
+                    </a>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
