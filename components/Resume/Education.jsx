@@ -21,8 +21,12 @@ const Education = ({ education }) => {
       >
         {education.map((edu) => {
           return (
-            <motion.div key={edu.id} variants={fadeInUp}>
-              <article className="timeline__item">
+            <motion.div
+              className="timeline__item"
+              key={edu.id}
+              variants={fadeInUp}
+            >
+              <article className="">
                 <h5 className="title title--h4 timeline__title">
                   {edu.institute}
                 </h5>

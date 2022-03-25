@@ -7,7 +7,7 @@ import "react-quill/dist/quill.core.css";
 function MyApp({ Component, pageProps }) {
   return (
     <AppProvider>
-      <Layout>
+      <Layout {...pageProps}>
         <Component {...pageProps} />
       </Layout>
     </AppProvider>

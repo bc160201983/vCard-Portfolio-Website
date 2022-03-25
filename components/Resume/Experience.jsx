@@ -26,8 +26,12 @@ const Experience = ({ experience }) => {
       >
         {experience.map((ex) => {
           return (
-            <motion.div key={ex.id} variants={fadeInUp}>
-              <article className="timeline__item">
+            <motion.div
+              className="timeline__item"
+              key={ex.id}
+              variants={fadeInUp}
+            >
+              <article className="">
                 <h5 className="title title--h4 timeline__title">
                   {ex.company}
                 </h5>
