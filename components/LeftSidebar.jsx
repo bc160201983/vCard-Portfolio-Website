@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import ItemInfo from "./ItemInfo";
 import Image from "next/image";
 import { FiMail, FiSmartphone, FiCalendar } from "react-icons/fi";
 import { MdOutlineAddLocationAlt } from "react-icons/md";
 import { FiLinkedin, FiGithub, FiInstagram, FiBookOpen } from "react-icons/fi";
 
-const LeftSidebar = ({ about }) => {
+const LeftSidebar = ({ aboutData }) => {
+  const [about, setAbout] = useState(aboutData);
   return (
     <div>
       <div className="left-nav sticky top-[64px] left-0 scroll-smooth border border-[#383838] nav-shadow mx-3 lg:h-[770px] h-[182px]  rounded-[20px] bg-[#1E1E1F] lg:basis-[20%] p-[30px] lg:mb-0 mb-[30px] flex lg:flex-col lg:justify-center justify-start items-center transition-all duration-[0.3s] ease-in-out">

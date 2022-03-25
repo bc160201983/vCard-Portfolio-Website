@@ -19,7 +19,7 @@ const Layout = ({ children, about }) => {
 
       <div className="lg:max-w-[1280px] md:max-w-[960px] h-screen sm:max-w-[720px] max-w-full  mx-auto lg:py-[60px] lg:mt-0 mt-[30px] px-[12px] main-layout">
         <div className="lg:flex ">
-          <LeftSidebar about={about} />
+          <LeftSidebar aboutData={about} />
           <div className="right-nav relative basis-[80%] h-full border border-[#383838] nav-shadow mx-3 rounded-[20px] bg-[#1E1E1F] p-[30px] transition-all duration-[0.3s] ease-in-out">
             <NavBar />
             <div className="main">{children}</div>

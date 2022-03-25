@@ -4,7 +4,7 @@ import Image from "next/image";
 const BlogList = () => {
   return (
     <div>
-      <article className="news-item box box--s2">
+      <article className="news-item box box--s2 cursor-pointer">
         <div className="news-item__image-wrap">
           <Image
             layout="fill"
