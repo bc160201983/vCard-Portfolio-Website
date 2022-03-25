@@ -30,20 +30,28 @@ const LeftSidebar = ({ about }) => {
           </div>
 
           <div className="flex flex-col justify-start items-center">
-            <div className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white">
-              {about[0]?.title}
-            </div>
-            <div className="title-pro py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2">
-              {about[0]?.captionRef}
-            </div>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href={about[0]?.image}
-              className="title-pro cursor-pointer hover:opacity-60 text-center py-2 px-2 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap"
-            >
-              Download CV
-            </a>
+            {about.map((a) => (
+              <div className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white">
+                {a.title}
+              </div>
+            ))}
+
+            {about.map((a) => (
+              <div className="title-pro py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2">
+                {a.captionRef}
+              </div>
+            ))}
+
+            {about.map((a) => (
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={a.image}
+                className="title-pro cursor-pointer hover:opacity-60 text-center py-2 px-2 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap"
+              >
+                Download CV
+              </a>
+            ))}
           </div>
           <div className="hid hidden lg:block">
             <div className="sepration my-8 w-full bg-[#383838] h-[1px] text-[#d6d6d6]"></div>
@@ -76,25 +84,27 @@ const LeftSidebar = ({ about }) => {
               />
             </div>
             <div className="social-icons flex justify-evenly w-full items-center">
-              <div className="facebook cursor-pointer">
-                <a
-                  rel="noreferrer"
-                  href={about[0]?.linkedInUrl}
-                  target="_blank"
-                >
-                  <FiLinkedin className="text-[#d6d6d6] text-[18px]" />
-                </a>
-              </div>
-              <div className="facebook cursor-pointer">
-                <a rel="noreferrer" href={about[0]?.gitHubUrl} target="_blank">
-                  <FiGithub className="text-[#d6d6d6] text-[18px]" />
-                </a>
-              </div>
-              <div className="facebook cursor-pointer">
-                <a rel="noreferrer" href={about[0]?.instaUrl} target="_blank">
-                  <FiInstagram className="text-[#d6d6d6] text-[18px]" />
-                </a>
-              </div>
+              {about.map((a) => {
+                return (
+                  <>
+                    <div className="facebook cursor-pointer">
+                      <a rel="noreferrer" href={a.linkedInUrl} target="_blank">
+                        <FiLinkedin className="text-[#d6d6d6] text-[18px]" />
+                      </a>
+                    </div>
+                    <div className="facebook cursor-pointer">
+                      <a rel="noreferrer" href={a.gitHubUrl} target="_blank">
+                        <FiGithub className="text-[#d6d6d6] text-[18px]" />
+                      </a>
+                    </div>
+                    <div className="facebook cursor-pointer">
+                      <a rel="noreferrer" href={a.instaUrl} target="_blank">
+                        <FiInstagram className="text-[#d6d6d6] text-[18px]" />
+                      </a>
+                    </div>
+                  </>
+                );
+              })}
             </div>
           </div>
         </div>
