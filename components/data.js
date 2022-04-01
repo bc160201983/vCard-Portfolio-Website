@@ -1,32 +1,32 @@
-import AppIcon from "../public/icon-app.svg";
+import AppIcon from "../public/api-svgrepo-com.svg";
 import IconDesign from "../public/icon-design.svg";
 import IconDev from "../public/icon-dev.svg";
-import IconPhoto from "../public/icon-photo.svg";
+import blockchain from "../public/hive-blockchain-svgrepo-com.svg";
 
 export const data = [
   {
     id: 1,
     title: "Web Design",
     img: "https://art-template.ru/vcard4/assets/icons/icon-design.svg",
-    desc: "The most modern and high-quality design made at a professional level.",
+    desc: "The most modern Design using latest Technologies, CSS3, TailwindCSS, Styled Components.",
   },
   {
     id: 2,
     title: "Web Development",
     img: "https://art-template.ru/vcard4/assets/icons/icon-dev.svg",
-    desc: "High-quality development of sites at the professional level.",
+    desc: "High-quality development using latest Technologies, ReactJS, NextJS, NodeJS and More.",
   },
 
   {
     id: 3,
-    title: "Mobile Apps",
+    title: "Api Development",
     img: AppIcon,
-    desc: "Professional development of applications for iOS and Android.",
+    desc: "Api Development using NodeJS, FastApi, Laravel, Django with MongoDB.",
   },
   {
     id: 4,
-    title: "Photography",
-    img: "https://art-template.ru/vcard4/assets/icons/icon-photo.svg",
-    desc: "I make high-quality photos of any category at a professional level.",
+    title: "Blockchain",
+    img: blockchain,
+    desc: "Really Passionate about learning Blockchain development.",
   },
 ];

@@ -44,7 +44,7 @@ export default function Home({ about }) {
           className="text-[#d6d6d6] grid lg:grid-cols-2 grid-cols-1"
         >
           {data.map((item) => (
-            <motion.div key={item.id} variants={fadeInUp} className="pr-5">
+            <motion.div key={item.id} variants={fadeInUp} className="lg:pr-5">
               <Info {...item} />
             </motion.div>
           ))}

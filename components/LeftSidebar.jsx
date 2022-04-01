@@ -45,7 +45,7 @@ const LeftSidebar = ({ aboutData }) => {
               about.map((a, index) => (
                 <div
                   key={index}
-                  className="title-pro py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2"
+                  className="title-pro whitespace-nowrap py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2"
                 >
                   {a.captionRef}
                 </div>
