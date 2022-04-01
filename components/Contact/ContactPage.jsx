@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <div className="row flex flex-col">
       <div className="flex justify-between space-x-10">
-        <div class="form-group col-12 col-md-6 has-error has-danger w-[50%]">
+        <div className="form-group col-12 col-md-6 has-error has-danger w-[50%]">
           <input
             type="text"
             className="w-full rounded-[14px] h-[52px] px-[22px] py-[14px] bg-[#1E1E1F] focus:border-[#B84c4c] border border-[#383838]"
@@ -12,7 +12,6 @@ const ContactPage = () => {
             name="nameContact"
             placeholder="Full name"
             required="required"
-            autocomplete="on"
           />
         </div>
         <div className="form-group col-12 col-md-6 w-[50%]">
@@ -23,7 +22,6 @@ const ContactPage = () => {
             name="emailContact"
             placeholder="Email address"
             required="required"
-            autocomplete="on"
           />
         </div>
       </div>
@@ -35,7 +33,7 @@ const ContactPage = () => {
           placeholder="Your Message"
           rows="4"
           required="required"
-          tabindex="1"
+          tabIndex="1"
         ></textarea>
       </div>
       <div className="flex justify-between items-center">
