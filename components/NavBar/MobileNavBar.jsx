@@ -38,7 +38,7 @@ const MobileNavBar = () => {
               Portfolio
             </li>
           </Link>
-          <Link href={"/blog"} passHref>
+          {/* <Link href={"/blog"} passHref>
             <li
               className={`mr-[30px] nav-item-hover cursor-pointer ${
                 router.pathname === "/blog" ||
@@ -49,7 +49,7 @@ const MobileNavBar = () => {
             >
               Blog
             </li>
-          </Link>
+          </Link> */}
           <li
             className={`mr-[30px] nav-item-hover cursor-pointer ${
               router.pathname == "/contact" ? `active` : ""

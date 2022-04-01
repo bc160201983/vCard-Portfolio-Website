@@ -38,6 +38,7 @@ const NavBar = () => {
               Portfolio
             </li>
           </Link>
+          {/* 
           <Link href={"/blog"} passHref>
             <li
               className={`mr-[30px] nav-item-hover cursor-pointer ${
@@ -48,7 +49,7 @@ const NavBar = () => {
             >
               Blog
             </li>
-          </Link>
+          </Link> */}
           <Link href={"/contact"} passHref>
             <li
               className={`mr-[30px] nav-item-hover cursor-pointer ${
