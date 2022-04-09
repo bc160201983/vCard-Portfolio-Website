@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import seoImage from "../public/ss.png";
 
 class MyDocument extends Document {
   render() {
@@ -11,7 +10,10 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta property="og:title" name="title" content="Muhammad Bilal" />
-          <meta property="og:image" content={seoImage} />
+          <meta
+            property="og:image"
+            content="https://firebasestorage.googleapis.com/v0/b/vcard-b7a06.appspot.com/o/Screenshot%202022-04-09%20213143.png?alt=media&token=dc0b9747-6827-46b7-91a9-96d3f8767387"
+          />
           <meta
             property="og:description"
             content="Muhammad Bilal is a Software Engineer ,who likes building stuff related to web."
