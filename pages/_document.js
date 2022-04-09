@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import seoImage from "../public/ss.png";
 
 class MyDocument extends Document {
   render() {
@@ -10,7 +11,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <meta property="og:title" name="title" content="Muhammad Bilal" />
-          <meta property="og:image" content="/ss.png" />
+          <meta property="og:image" content={seoImage} />
           <meta
             property="og:description"
             content="Muhammad Bilal is a Software Engineer ,who likes building stuff related to web."
