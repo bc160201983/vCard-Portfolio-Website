@@ -50,13 +50,15 @@ const MobileNavBar = () => {
               Blog
             </li>
           </Link> */}
-          <li
-            className={`mr-[30px] nav-item-hover cursor-pointer ${
-              router.pathname == "/contact" ? `active` : ""
-            }`}
-          >
-            Contact
-          </li>
+          <Link href={"/contact"} passHref>
+            <li
+              className={`mr-[30px] nav-item-hover cursor-pointer ${
+                router.pathname == "/contact" ? `active` : ""
+              }`}
+            >
+              Contact
+            </li>
+          </Link>
         </ul>
       </div>
     </div>

@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   await cors(req, res);
   if (req.method === "GET") {
     try {
-      await res.unstable_revalidate("/portfolio/" + req.query.id);
+      await res.unstable_revalidate(`/portfolio/${req.query.id}`);
       return res.json({ revalidated: true, msg: `get Request${req.query.id}` });
     } catch (err) {
       // If there was an error, Next.js will continue
