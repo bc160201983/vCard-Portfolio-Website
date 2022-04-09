@@ -4,6 +4,7 @@ import React from "react";
 import LeftSidebar from "./LeftSidebar";
 import MobileNavBar from "./NavBar/MobileNavBar";
 import NavBar from "./NavBar/NavBar";
+import Seo from "./Seo";
 
 const Layout = ({ children, about }) => {
   const router = useRouter();
@@ -11,12 +12,12 @@ const Layout = ({ children, about }) => {
   return (
     <>
       <Head>
-        <title>Bilal Afzaal</title>
+        <title>Muhammad Bilal</title>
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
+      <Seo />
       <div className="lg:max-w-[1280px] md:max-w-[960px] h-screen sm:max-w-[720px] max-w-full  mx-auto lg:py-[60px] lg:mt-0 mt-[30px] px-[12px] main-layout">
         <div className="lg:flex ">
           <LeftSidebar aboutData={about} />
