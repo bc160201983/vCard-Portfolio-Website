@@ -16,8 +16,20 @@ const Layout = ({ children, about }) => {
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Muhammad Bilal" />
+        <meta property="og:site_name" content="Muhammad Bilal Portfolio" />
+        <meta property="og:url" content="https://bilalafzaal.vercel.app/" />
+        <meta
+          property="og:description"
+          content="Muhammad Bilal is a Software Engineer ,who likes building stuff related to web."
+        />
+        <meta property="og:type" content="profile" />
+        <meta
+          property="og:image"
+          content="https://firebasestorage.googleapis.com/v0/b/vcard-b7a06.appspot.com/o/Screenshot%202022-04-09%20213143.png?alt=media&amp;token=dc0b9747-6827-46b7-91a9-96d3f8767387"
+        />
       </Head>
-      <Seo />
+
       <div className="lg:max-w-[1280px] md:max-w-[960px] h-screen sm:max-w-[720px] max-w-full  mx-auto lg:py-[60px] lg:mt-0 mt-[30px] px-[12px] main-layout">
         <div className="lg:flex ">
           <LeftSidebar aboutData={about} />
