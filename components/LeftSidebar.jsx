@@ -31,25 +31,13 @@ const LeftSidebar = ({ aboutData }) => {
           </div>
 
           <div className="flex flex-col justify-start items-center">
-            {about &&
-              about.map((a, index) => (
-                <div
-                  key={index}
-                  className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white"
-                >
-                  {a.title}
-                </div>
-              ))}
+            <div className="title-name text-[26px] mb-[16px] whitespace-nowrap font-medium text-white">
+              Muhammad Bilal
+            </div>
 
-            {about &&
-              about.map((a, index) => (
-                <div
-                  key={index}
-                  className="title-pro whitespace-nowrap py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2"
-                >
-                  {a.captionRef}
-                </div>
-              ))}
+            <div className="title-pro whitespace-nowrap py-2 px-4 capitalize text-sm text-center font-light bg-[#2a2a2b] text-white rounded-lg  mb-2">
+              JavaScript Web Engineer
+            </div>
 
             {about &&
               about.map((a, index) => (
@@ -57,7 +45,7 @@ const LeftSidebar = ({ aboutData }) => {
                   key={index}
                   rel="noreferrer"
                   target="_blank"
-                  href={a.image}
+                  href="https://firebasestorage.googleapis.com/v0/b/vcard-b7a06.appspot.com/o/about%2Fcy97iWa5NeJjVz6hHFHr%2Fimage?alt=media&token=dc22ea4b-1238-4eb3-87c7-e64c9ec8269e"
                   className="title-pro cursor-pointer hover:opacity-60 text-center py-2 px-2 text-sm font-light bg-[#2a2a2b] text-white rounded-lg whitespace-nowrap"
                 >
                   Download CV
